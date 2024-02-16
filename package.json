@@ -1,13 +1,14 @@
 {
   "name": "e-commerce-project",
   "version": "1.0.0",
-  "description": "ecommerce rest api",
+  "description": "ecommerce rest app",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "start": "node server.js",
-    "client": "npm start --prefix ./client",
-    "dev": "concurrently \"npm run start\" \"npm run client\""
+    "server":"nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm start\" \"npm run client\""
   },
   "keywords": [],
   "author": "Gopal Singh",
