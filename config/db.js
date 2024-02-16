@@ -25,4 +25,4 @@ const connectDB = async () => {
 };
 
 // Export the named function
-module.exports = connectDB;
+export default connectDB;
