@@ -65,17 +65,17 @@
 
 
 //             GEMINI SERVER.JS
-const express = require('express');
-const mongoose = require('mongoose');
-const dotenv = require('dotenv');
-const colors = require('colors');
-const morgan = require('morgan');
-const connectDB = require('./config/db.js'); // Import named export
+import express from 'express';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
+import colors from 'colors';
+import morgan from 'morgan';
+import connectDB from './config/db.js'; // Assuming `db.js` is updated for ES modules
 
 // Routes
-const authRoute = require('./routes/authRoute.js');
-const categoryRoutes = require('./routes/categoryRoutes.js');
-const productRoutes = require('./routes/productRoutes.js');
+import authRoute from './routes/authRoute.js';
+import categoryRoutes from './routes/categoryRoutes.js';
+import productRoutes from './routes/productRoutes.js';
 
 // Configure environment variables
 dotenv.config();
