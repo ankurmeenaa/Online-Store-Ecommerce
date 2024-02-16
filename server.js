@@ -18,6 +18,8 @@ dotenv.config();
 
 // rest object -bcz apis create kar paaye
 const app = express()
+const __dirname = path.dirname(new URL(import.meta.url).pathname);
+
 
 //middelwares
 app.use(cors());
